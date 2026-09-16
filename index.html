@@ -18,7 +18,6 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{font:400 16px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;background:#f8f9fb;overflow-x:hidden}
 :root{--p:#1a3a5c;--pd:#0f2440;--a:#e8a020;--g:#25d366;--bl:#f8f9fb;--bw:#fff;--t:#1a1a2e;--tm:#6b7280;--br:#e5e7eb}
 img{max-width:100%;height:auto;display:block}
-picture{display:block;max-width:100%}
 button{font-family:inherit;cursor:pointer;border:0;background:none}
 img[loading=lazy]{opacity:0;transition:opacity .3s}
 img[loading=lazy].loaded{opacity:1}
@@ -62,7 +61,6 @@ section{padding:44px 16px}
 .car{max-width:900px;margin:0 auto;position:relative;overflow:hidden;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.1);background:var(--bw)}
 .car-track{display:flex;will-change:transform;transition:transform .4s ease-out}
 .car-slide{min-width:100%;display:flex;justify-content:center;align-items:center;padding:12px}
-.car-slide picture{width:100%}
 .car-slide img{width:100%;max-height:500px;object-fit:contain;border-radius:8px}
 .car-dots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:6px;background:rgba(15,36,64,.7);padding:6px 12px;border-radius:50px}
 .dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);padding:0;transition:all .25s}
@@ -209,10 +207,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     <p>Manutenção e Materiais Elétricos, Geração, Transmissão e Distribuição de Energia, Instalação Elétrica Industrial, Automação Industrial, Eletrônica Analógica, Transformadores, Fontes Energéticas Alternativas, Instalação Elétrica Predial: organizados para você <strong>reconhecer e aplicar</strong>.</p>
 
     <div class="hero-img">
-      <picture>
-        <source srcset="mapas-visuais-eletrotecnica.webp" type="image/webp">
-        <img src="mapas-visuais-eletrotecnica.png" alt="Prévia dos +100 Mapas Visuais de Eletrotécnica" width="900" height="600" fetchpriority="high" decoding="async">
-      </picture>
+      <img src="mapas-visuais-eletrotecnica.png" alt="Prévia dos +100 Mapas Visuais de Eletrotécnica" width="900" height="600" fetchpriority="high" decoding="async">
     </div>
 
     <div class="feat">
@@ -243,16 +238,16 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
 <section class="car-sec">
   <div class="car" id="car1">
     <div class="car-track" id="track1">
-      <div class="car-slide"><picture><source srcset="mapa01.webp" type="image/webp"><img src="mapa01.png" alt="Mapa Visual 01" loading="eager" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa02.webp" type="image/webp"><img src="mapa02.png" alt="Mapa Visual 02" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa03.webp" type="image/webp"><img src="mapa03.png" alt="Mapa Visual 03" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa04.webp" type="image/webp"><img src="mapa04.png" alt="Mapa Visual 04" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa05.webp" type="image/webp"><img src="mapa05.png" alt="Mapa Visual 05" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa06.webp" type="image/webp"><img src="mapa06.png" alt="Mapa Visual 06" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa07.webp" type="image/webp"><img src="mapa07.png" alt="Mapa Visual 07" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa08.webp" type="image/webp"><img src="mapa08.png" alt="Mapa Visual 08" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa09.webp" type="image/webp"><img src="mapa09.png" alt="Mapa Visual 09" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa10.webp" type="image/webp"><img src="mapa10.png" alt="Mapa Visual 10" loading="lazy" decoding="async"></picture></div>
+      <div class="car-slide"><img src="mapa01.png" alt="Mapa Visual 01" loading="eager" decoding="async"></div>
+      <div class="car-slide"><img src="mapa02.png" alt="Mapa Visual 02" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa03.png" alt="Mapa Visual 03" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa04.png" alt="Mapa Visual 04" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa05.png" alt="Mapa Visual 05" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa06.png" alt="Mapa Visual 06" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa07.png" alt="Mapa Visual 07" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa08.png" alt="Mapa Visual 08" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa09.png" alt="Mapa Visual 09" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa10.png" alt="Mapa Visual 10" loading="lazy" decoding="async"></div>
     </div>
     <button class="car-btn prev" aria-label="Anterior" type="button"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
     <button class="car-btn next" aria-label="Próximo" type="button"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
@@ -300,16 +295,16 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
   </div>
   <div class="car" id="car2">
     <div class="car-track" id="track2">
-      <div class="car-slide"><picture><source srcset="mapa01.webp" type="image/webp"><img src="mapa01.png" alt="Prévia Mapa 01" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa02.webp" type="image/webp"><img src="mapa02.png" alt="Prévia Mapa 02" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa03.webp" type="image/webp"><img src="mapa03.png" alt="Prévia Mapa 03" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa04.webp" type="image/webp"><img src="mapa04.png" alt="Prévia Mapa 04" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa05.webp" type="image/webp"><img src="mapa05.png" alt="Prévia Mapa 05" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa06.webp" type="image/webp"><img src="mapa06.png" alt="Prévia Mapa 06" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa07.webp" type="image/webp"><img src="mapa07.png" alt="Prévia Mapa 07" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa08.webp" type="image/webp"><img src="mapa08.png" alt="Prévia Mapa 08" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa09.webp" type="image/webp"><img src="mapa09.png" alt="Prévia Mapa 09" loading="lazy" decoding="async"></picture></div>
-      <div class="car-slide"><picture><source srcset="mapa10.webp" type="image/webp"><img src="mapa10.png" alt="Prévia Mapa 10" loading="lazy" decoding="async"></picture></div>
+      <div class="car-slide"><img src="mapa01.png" alt="Prévia Mapa 01" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa02.png" alt="Prévia Mapa 02" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa03.png" alt="Prévia Mapa 03" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa04.png" alt="Prévia Mapa 04" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa05.png" alt="Prévia Mapa 05" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa06.png" alt="Prévia Mapa 06" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa07.png" alt="Prévia Mapa 07" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa08.png" alt="Prévia Mapa 08" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa09.png" alt="Prévia Mapa 09" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="mapa10.png" alt="Prévia Mapa 10" loading="lazy" decoding="async"></div>
     </div>
     <button class="car-btn prev" aria-label="Anterior" type="button"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
     <button class="car-btn next" aria-label="Próximo" type="button"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
@@ -325,12 +320,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     <div class="bonus-grid">
       <div class="bonus-c">
         <div class="bonus-b">Bônus 01</div>
-        <div class="bonus-img">
-          <picture>
-            <source srcset="flashcards-bolso.webp" type="image/webp">
-            <img src="flashcards-bolso.png" alt="Flashcards de Bolso de Eletrotécnica" loading="lazy" decoding="async">
-          </picture>
-        </div>
+        <div class="bonus-img"><img src="flashcards-bolso.png" alt="Flashcards de Bolso de Eletrotécnica" loading="lazy" decoding="async"></div>
         <div class="stars">★★★★★</div>
         <h3>Flashcards de Bolso de Eletrotécnica</h3>
         <p>Cartões de pergunta e resposta para revisão relâmpago, organizados pelos 6 pacotes.</p>
@@ -345,12 +335,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
       </div>
       <div class="bonus-c">
         <div class="bonus-b">Bônus 03</div>
-        <div class="bonus-img">
-          <picture>
-            <source srcset="checklist-inspecao.webp" type="image/webp">
-            <img src="checklist-inspecao.png" alt="Checklist de Inspeção de Eletrotécnica" loading="lazy" decoding="async">
-          </picture>
-        </div>
+        <div class="bonus-img"><img src="checklist-inspecao.png" alt="Checklist de Inspeção de Eletrotécnica" loading="lazy" decoding="async"></div>
         <div class="stars">★★★★★</div>
         <h3>Checklist de Inspeção e Manutenção</h3>
         <p>Ferramenta prática de campo, com itens organizados por categoria para inspeções.</p>
@@ -366,24 +351,9 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     <h2 class="title">O que dizem quem já usa</h2>
     <p class="sub">Feedback de quem já estuda com os Mapas Visuais de Eletrotécnica.</p>
     <div class="depo-grid">
-      <div class="depo-c">
-        <picture>
-          <source srcset="depoimento-01.webp" type="image/webp">
-          <img src="depoimento-01.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async">
-        </picture>
-      </div>
-      <div class="depo-c">
-        <picture>
-          <source srcset="depoimento-02.webp" type="image/webp">
-          <img src="depoimento-02.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async">
-        </picture>
-      </div>
-      <div class="depo-c">
-        <picture>
-          <source srcset="depoimento-03.webp" type="image/webp">
-          <img src="depoimento-03.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async">
-        </picture>
-      </div>
+      <div class="depo-c"><img src="depoimento-01.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
+      <div class="depo-c"><img src="depoimento-02.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
+      <div class="depo-c"><img src="depoimento-03.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
     </div>
   </div>
 </section>
@@ -395,10 +365,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     <p class="sub">Acesso imediato, pagamento único e garantia de 7 dias.</p>
 
     <div class="mockup">
-      <picture>
-        <source srcset="mockup-produto.webp" type="image/webp">
-        <img src="mockup-produto.png" alt="Produto +100 Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async">
-      </picture>
+      <img src="mockup-produto.png" alt="Produto +100 Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async">
     </div>
 
     <div class="price-grid">
@@ -427,12 +394,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
         <div class="price-v">R$14<small>,90</small></div>
         <div class="price-per">Pagamento único</div>
 
-        <div class="price-mockup">
-          <picture>
-            <source srcset="mockup-completo.webp" type="image/webp">
-            <img src="mockup-completo.png" alt="Plano Completo: Mapas Visuais + Flashcards + Glossário + Checklist" loading="lazy" decoding="async">
-          </picture>
-        </div>
+        <div class="price-mockup"><img src="mockup-completo.png" alt="Plano Completo: Mapas Visuais + Flashcards + Glossário + Checklist" loading="lazy" decoding="async"></div>
 
         <ul class="price-f">
           <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><strong>Os 6 pacotes do Plano Básico</strong></li>
