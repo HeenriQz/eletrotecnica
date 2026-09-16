@@ -1,0 +1,21 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build / temporarios
+*.log
+*.tmp
+dist/
+build/
