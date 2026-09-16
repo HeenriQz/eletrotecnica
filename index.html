@@ -134,10 +134,9 @@ section{padding:44px 16px}
 .bonus-p .old{font-size:13px;color:var(--tm);text-decoration:line-through}
 .bonus-p .free{font-size:18px;font-weight:800;color:var(--g)}
 
-.depo{background:var(--bw)}
-.depo-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:28px;max-width:420px;margin-left:auto;margin-right:auto}
-.depo-c{background:var(--bl);border-radius:14px;padding:8px;border:1px solid var(--br);overflow:hidden}
-.depo-c img{width:100%;border-radius:10px}
+.depo{background:var(--bw);padding-bottom:60px}
+.depo .car{box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.depo .car-slide{background:var(--bl)}
 
 .pricing{background:linear-gradient(180deg,#f8f9fb,#eef1f6)}
 .price-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:32px;max-width:420px;margin-left:auto;margin-right:auto}
@@ -195,13 +194,13 @@ section{padding:44px 16px}
   section{padding:60px 24px}
   .hero{padding:60px 24px 80px}
   .car-sec{padding:0 24px 60px}
-  .depo-grid{grid-template-columns:repeat(3,1fr);max-width:none}
+  .depo{padding-bottom:70px}
   .price-grid{grid-template-columns:repeat(2,1fr);max-width:800px;gap:28px}
   .price-c.dest{transform:scale(1.03)}
   .sticky{display:none}
   .foot{padding-bottom:32px}
-  .why-c,.bonus-c,.price-c,.depo-c{transition:transform .2s}
-  .why-c:hover,.bonus-c:hover,.depo-c:hover{transform:translateY(-4px)}
+  .why-c,.bonus-c,.price-c{transition:transform .2s}
+  .why-c:hover,.bonus-c:hover{transform:translateY(-4px)}
 }
 
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
@@ -250,7 +249,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
   </div>
 </section>
 
-<!-- CARROSSEL 1 EM FILA -->
+<!-- CARROSSEL 1 — MAPAS -->
 <section class="car-sec">
   <div class="car" id="car1">
     <div class="car-track" id="track1">
@@ -287,7 +286,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
   </div>
 </section>
 
-<!-- PRÉVIA / CARROSSEL 2 EM FILA -->
+<!-- CARROSSEL 2 — PRÉVIA -->
 <section class="preview" id="preview">
   <div class="container center">
     <span class="tag" style="background:rgba(255,255,255,.12);color:#e8a020">Prévia</span>
@@ -347,16 +346,24 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
   </div>
 </section>
 
+<!-- CARROSSEL 3 — DEPOIMENTOS EM LOOP -->
 <section class="depo" id="reviews">
   <div class="container center">
     <span class="tag">Avaliações</span>
     <h2 class="title">O que dizem quem já usa</h2>
     <p class="sub">Feedback de quem já estuda com os Mapas Visuais de Eletrotécnica.</p>
-    <div class="depo-grid">
-      <div class="depo-c"><img src="depoimento-01.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
-      <div class="depo-c"><img src="depoimento-02.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
-      <div class="depo-c"><img src="depoimento-03.png" alt="Depoimento sobre os Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
+  </div>
+  <div class="car" id="car3">
+    <div class="car-track" id="track3">
+      <div class="car-slide"><img src="depoimento-03.png" alt="Depoimento 03 sobre os Mapas Visuais" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="depoimento-04.png" alt="Depoimento 04 sobre os Mapas Visuais" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="depoimento-05.png" alt="Depoimento 05 sobre os Mapas Visuais" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="depoimento-06.png" alt="Depoimento 06 sobre os Mapas Visuais" loading="lazy" decoding="async"></div>
+      <div class="car-slide"><img src="depoimento-07.png" alt="Depoimento 07 sobre os Mapas Visuais" loading="lazy" decoding="async"></div>
     </div>
+    <button class="car-btn prev" aria-label="Anterior" type="button"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+    <button class="car-btn next" aria-label="Próximo" type="button"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+    <div class="car-dots" id="dots3"></div>
   </div>
 </section>
 
@@ -374,12 +381,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
         <div class="price-per">Pagamento único</div>
         <div class="price-mockup"><img src="mockup-produto.png" alt="Produto +100 Mapas Visuais de Eletrotécnica" loading="lazy" decoding="async"></div>
         <ul class="price-f">
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Manutenção e Materiais Elétricos</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Geração, Transmissão e Distribuição</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Instalação Industrial e Predial</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Automação e Eletrônica Analógica</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Transformadores e Fontes Alternativas</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Legislação, Normas e Segurança</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><strong>Todo conteúdo de eletrotécnica</strong></li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Acesso digital imediato</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Garantia de 7 dias</li>
         </ul>
@@ -394,7 +396,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
         <div class="price-per">Pagamento único</div>
         <div class="price-mockup"><img src="mockup-completo.png" alt="Plano Completo: Mapas Visuais + Flashcards + Glossário + Checklist" loading="lazy" decoding="async"></div>
         <ul class="price-f">
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><strong>Os 6 pacotes do Plano Básico</strong></li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><strong>Todo conteúdo de eletrotécnica</strong></li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Bônus: Flashcards de Bolso</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Bônus: Glossário de Termos</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Bônus: Checklist de Inspeção</li>
@@ -459,7 +461,6 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
 (function(){
   'use strict';
 
-  /* FAQ */
   var faqBtns = document.querySelectorAll('.faq-q');
   for (var i = 0; i < faqBtns.length; i++) {
     faqBtns[i].addEventListener('click', function(){
@@ -471,7 +472,6 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     });
   }
 
-  /* Smooth scroll */
   var links = document.querySelectorAll('a[href^="#"]');
   for (var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function(e){
@@ -482,7 +482,6 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     });
   }
 
-  /* Lazy fade-in */
   var lazyImgs = document.querySelectorAll('img[loading="lazy"]');
   for (var i = 0; i < lazyImgs.length; i++) {
     (function(img){
@@ -494,7 +493,6 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     })(lazyImgs[i]);
   }
 
-  /* Reveal */
   if ('IntersectionObserver' in window) {
     var obs = new IntersectionObserver(function(entries){
       for (var i = 0; i < entries.length; i++) {
@@ -506,7 +504,7 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
       }
     }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
-    var els = document.querySelectorAll('.why-c,.bonus-c,.price-c,.depo-c');
+    var els = document.querySelectorAll('.why-c,.bonus-c,.price-c');
     for (var i = 0; i < els.length; i++) {
       els[i].style.opacity = '0';
       els[i].style.transform = 'translateY(15px)';
@@ -515,7 +513,6 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
     }
   }
 
-  /* ========== CARROSSEL EM FILA ========== */
   function initCarousel(id, trackId, dotsId) {
     var box = document.getElementById(id);
     var track = document.getElementById(trackId);
@@ -659,8 +656,8 @@ button:focus-visible,a:focus-visible{outline:3px solid #e8a020;outline-offset:2p
 
   initCarousel('car1', 'track1', 'dots1');
   initCarousel('car2', 'track2', 'dots2');
+  initCarousel('car3', 'track3', 'dots3');
 
-  /* Sticky CTA */
   (function(){
     var sticky = document.getElementById('sticky');
     var hero = document.querySelector('.hero');
